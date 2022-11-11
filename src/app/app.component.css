@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    width: 175px;
+    height: 55px;
+
+    border-radius: 50px;
+    
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.primary {
+    background: #199558;
+    color: #F9F9F9;
+    margin-right: 16px;
+}
+
+.secondary {
+    background: #F9F9F9;
+    color: #199558;
+    border: 2px solid #73BA97;
+}
