@@ -9,6 +9,10 @@ export class LoginComponent {
 
   constructor() { }
 
+
+  // Configurações do formulário
+
+  // Configurações do botão
   primaryMax = {
     title: 'ENTRAR',
     styles: {
