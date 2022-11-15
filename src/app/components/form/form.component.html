@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="container-form">
+        <!-- <h1>{{formConfigs.title}}</h1> -->
+        <h1>Bem-vindo Aluno(a)</h1>
+
+        <form class="form-group">
+            <div class="input-group">
+                <i class="ph-user-fill icon"></i>
+                <input type="text" placeholder="Usuário" />
+            </div>
+            <div class="input-group">
+                <i class="ph-key-fill icon"></i>
+                <input type="{{hide ? 'text' : 'password'}}" placeholder="Senha" />
+                <i id="show-password" (click)="hide = !hide" class="{{hide ? 'ph-eye-fill' : 'ph-eye-slash-fill'}} icon" ></i>
+            </div>
+            <a href="" id="remember">Esqueceu sua senha?</a>
+        </form>
+        <app-button [buttonConfigs]="primaryMax"></app-button>
+    </div>
+
+    <img src="../../../assets/Illustration.svg" alt="">
+</div>
