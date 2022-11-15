@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.schedule {
+    width: 700px;
+    height: 538.19px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.legends {
+    display: flex;
+    flex-direction: column;
+}
+
+#salas {
+    margin-bottom: 2rem;
+}
