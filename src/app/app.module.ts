@@ -14,6 +14,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormComponent } from './components/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigateComponent } from './components/navigate/navigate.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NavigateComponent } from './components/navigate/navigate.component';
     ButtonComponent,
     FormComponent,
     NavigateComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
