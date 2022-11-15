@@ -9,6 +9,11 @@ export class JobsVacancyComponent implements OnInit {
 
   constructor() { }
 
+  public headerProps = {
+    title: "Vagas de Emprego",
+    showTitle: true,
+  }
+
   ngOnInit(): void {
   }
 

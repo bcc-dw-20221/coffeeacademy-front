@@ -1,7 +1,14 @@
-<header>
-    <img src="../../../assets/logo-ifce.svg" alt="">
-    <div class="profile-info">
-        <span>Fulano de tal</span>
-        <i class="ph-user-circle-fill"></i>
+<div class="container">
+    <header>
+        <img src="../../../assets/logo-ifce.svg" alt="">
+        <div class="profile-info">
+            <span>Fulano de tal</span>
+            <i class="ph-user-circle-fill"></i>
+        </div>
+    </header>
+    <div *ngIf="show" class="title">
+        <i class="ph-arrow-circle-left-fill"></i>
+        <h1>{{title}}</h1>
     </div>
-</header>
+    
+</div>

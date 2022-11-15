@@ -9,6 +9,12 @@ export class AcademicCalendarComponent implements OnInit {
 
   constructor() { }
 
+  public headerProps = {
+    title: "Calendário Acadêmico",
+    showTitle: true,
+  }
+
+
   ngOnInit(): void {
   }
 
