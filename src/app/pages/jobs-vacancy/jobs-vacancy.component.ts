@@ -10,7 +10,7 @@ export class JobsVacancyComponent implements OnInit {
   constructor() { }
 
   public headerProps = {
-    title: "Vagas de Emprego",
+    title: "Vagas de Emprego/Estágio",
     showTitle: true,
   }
 

@@ -1,14 +1,35 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Emitters } from 'src/app/emmiters/emmiters';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
-  constructor() { }
+  message = '';
 
+
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  ngOnInit(): void {
+    this.http.get('http://localhost:800/aluno/user', { withCredentials: true }).subscribe(
+      {
+        next: (res: any) => {
+          this.message = `Hi ${res.name}`;
+          Emitters.authEmitter.emit(true);
+        },
+        error: (err) => {
+          this.message = "Conecte-se";
+          Emitters.authEmitter.emit(false);
+        }
+      }
+    )
+  }
 
   // Configurações do formulário
 
