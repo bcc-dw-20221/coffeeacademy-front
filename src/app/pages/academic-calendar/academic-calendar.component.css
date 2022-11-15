@@ -1,0 +1,19 @@
+.calendars-container {
+    margin: 4rem 3.75rem -0.25rem 4rem;
+}
+
+.calendar-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.calendar-item {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.calendar {
+    width: 250px;
+    height: 245.72px;
+}
