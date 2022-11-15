@@ -15,6 +15,10 @@ import { FormComponent } from './components/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigateComponent } from './components/navigate/navigate.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AcademicCalendarComponent } from './pages/academic-calendar/academic-calendar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,9 @@ import { HeaderComponent } from './components/header/header.component';
     FormComponent,
     NavigateComponent,
     HeaderComponent,
+    AcademicCalendarComponent,
+    HomeComponent,
+    JobsVacancyComponent,
   ],
   imports: [
     BrowserModule,
