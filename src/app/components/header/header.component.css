@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.profile-info {
+    color: rgba(25, 149, 88, 1);
+    display: flex;
+    align-items: center;
+}
+.profile-info span {
+    font-weight: 500;
+}
+
+i {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+}
