@@ -1,9 +1,7 @@
-.calendars-container {
-    margin: 4rem 3.75rem -0.25rem 4rem;
-}
 
 .calendar-list {
     display: flex;
+    justify-content: center;
     list-style: none;
     flex-wrap: wrap;
 }
