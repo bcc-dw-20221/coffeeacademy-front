@@ -1,0 +1,17 @@
+.cards-list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.vaga {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.card {
+    width: 450px;
+    height: 225px;
+}
