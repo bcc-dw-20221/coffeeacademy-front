@@ -9,6 +9,10 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  public headerProps = {
+    showTitle: false,
+  }
+
   ngOnInit(): void {
   }
 
