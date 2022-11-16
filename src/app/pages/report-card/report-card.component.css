@@ -1,0 +1,24 @@
+.container {
+    color: rgba(25, 149, 88, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.boletim {
+    width: 1000px;
+    height: 219.24px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.info {
+    width: 600px;
+    height: 186.02px;
+}
