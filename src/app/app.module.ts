@@ -18,6 +18,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { AcademicCalendarComponent } from './pages/academic-calendar/academic-calendar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ScheduleComponent } from './pages/schedule/schedule.component';
+import { ReportCardComponent } from './pages/report-card/report-card.component';
+import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.component';
+import { OrientationsComponent } from './pages/orientations/orientations.component';
 
 
 @NgModule({
@@ -32,6 +38,10 @@ import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.componen
     AcademicCalendarComponent,
     HomeComponent,
     JobsVacancyComponent,
+    ScheduleComponent,
+    ReportCardComponent,
+    AcademicDiaryComponent,
+    OrientationsComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +50,10 @@ import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.componen
     MatFormFieldModule, 
     MatIconModule,
     MatInputModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [
     MatTabsModule,
