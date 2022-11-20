@@ -14,15 +14,39 @@
 }
 
 .options-list {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 
-.card {
-    width: 350px;
-    height: 126.4px;
-    margin-right: 2rem;
-    margin-top: 2rem;
+.options {
+    background-color: #DDEFE6;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    width: 200px;
+}
+a:visited {
+    color: rgba(25, 149, 88, 1);
+}
+
+.options span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.icone {
+    height: 3rem;
+    width: 3rem;
+}
+
+.route {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
 }
