@@ -1,18 +1,42 @@
 .cards-list {
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     list-style: none;
     margin-top: 2rem;
 }
 
 .vaga {
-    margin-right: 0.75rem;
-    margin-bottom: 0.75rem;
+    background-color: #DDEFE6;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.card {
-    width: 450px;
-    height: 225px;
+.sobre-vaga {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-vaga h2 {
+    margin-bottom: 0;
+}
+
+.sobre-vaga img {
+    margin: 16px 0 16px 16px;
+    
+}
+
+.info-vaga {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    display: flex;    
+    justify-content: flex-end;
 }
