@@ -1,0 +1,119 @@
+.container-nav {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-nav a {
+    display: flex;
+    text-decoration: none;
+    color: rgba(25, 149, 88, 1);
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.navigation-items .items {
+    padding: 4px;
+    margin-left: 1.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-items .items:hover {
+    padding: 4px;
+    border-bottom: 2px solid rgba(25, 149, 88, 1);
+    transition: .5s all;
+}
+
+.navigation-items .active {
+    padding: 4px;
+    border-bottom: 2px solid rgba(25, 149, 88, 1);
+}
+
+.navigation-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Formulario de login */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.container-form {
+    padding: 0;
+    margin: auto 0;
+    background: rgba(25, 149, 88, 0.2);
+    width: 31.5rem;
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: rgb(25, 149, 88);
+}
+.title {
+    font-weight: 700;
+    font-size: 1.60rem;
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+.input-group{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(25, 149, 88, 1);
+}
+
+.input-group i {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-left: 16px;
+    color: rgb(25, 149, 88);
+}
+
+#show-password {
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    padding: none;
+    border: none;
+    width: 350px;
+    height: 50px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input::placeholder, #remember {
+    font-size: 12px;
+    color: rgb(25, 149, 88);
+}
+#remember {
+    margin: 8px 0 40px 0;
+    text-decoration: none;
+}
+
+.container img {
+    width: 50%;
+}

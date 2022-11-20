@@ -1,3 +1,37 @@
-<app-navigate></app-navigate>
-<app-form></app-form>
+<mat-toolbar class="container-nav">
+    <a [routerLink]="'/login'"><img src="../../../assets/logo-ifce.svg" alt=""></a>
+    <div>
+        <ul class="navigation-items">
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/aluno">Aluno</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/professor">Professor</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/pais-de-aluno">Pais de Aluno</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/egresso">Egresso</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/coordenador">Coordenador</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/coordenador-de-estagio">Coordenador de Estágio</a></li>
+            <li><a routerLinkActive="active" class="items" mat-button routerLink="/gestor">Gestor</a></li>
+        </ul>
+    </div>
+</mat-toolbar>
+<div class="container">
+    <div class="container-form">
+        <app-title-login><h1 class="title">Bem vindo(a) {{titleLogin.title}}</h1></app-title-login>
+
+        <form [formGroup]="form" (submit)="submit()" class="form-group">
+            <div class="input-group">
+                <i class="ph-user-fill icon"></i>
+                <input type="text" placeholder="Usuário" />
+            </div>
+            <div class="input-group">
+                <i class="ph-key-fill icon"></i>
+                <input type="{{hide ? 'text' : 'password'}}" placeholder="Senha" />
+                <i id="show-password" (click)="hide = !hide"
+                    class="{{hide ? 'ph-eye-fill' : 'ph-eye-slash-fill'}} icon"></i>
+            </div>
+            <a href="" id="remember">Esqueceu sua senha?</a>
+        </form>
+        <app-button [buttonConfigs]="primaryMax"></app-button>
+    </div>
+
+    <img src="../../../assets/Illustration.svg" alt="">
+</div>
 <router-outlet></router-outlet>

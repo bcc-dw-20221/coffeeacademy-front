@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { Emitters } from 'src/app/emmiters/emmiters';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,24 +12,45 @@ export class LoginComponent implements OnInit {
 
   message = '';
 
+  form!: FormGroup;
+
+  titleLogin = {
+    title: this.activatedRoute.snapshot.url.toString() === 'aluno' ? 'Aluno(a)' : this.activatedRoute.snapshot.url.toString() === 'professor' ? 'Professor(a)' : this.activatedRoute.snapshot.url.toString() === 'pais-de-aluno' ? 'Pais de aluno(a)' : this.activatedRoute.snapshot.url.toString() === 'egresso' ? "Egresso" : this.activatedRoute.snapshot.url.toString() === 'coordenador' ? "Coordenador(a)" : this.activatedRoute.snapshot.url.toString() === 'coordenador-de-estagio' ? "Coordenador(a) de Estágio" : this.activatedRoute.snapshot.url.toString() === 'gestor' ? "Gestor(a)" : ""
+  }
+
 
   constructor(
-    private http: HttpClient
-  ) { }
+    private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.http.get('http://localhost:800/aluno/user', { withCredentials: true }).subscribe(
-      {
-        next: (res: any) => {
-          this.message = `Hi ${res.name}`;
-          Emitters.authEmitter.emit(true);
-        },
-        error: (err) => {
-          this.message = "Conecte-se";
-          Emitters.authEmitter.emit(false);
+    this.form = this.formBuilder.group({
+      matricula: '',
+      senha: ''
+    });
+  }
+
+  // linkIsActive(): string {
+  //   this.titleForm
+
+  //   return this.titleForm;
+  // }
+  hide = false;
+
+  submit(): void {
+    this.http.post('http://localhost:8000/aluno/login', this.form.getRawValue(), { withCredentials: true })
+      .subscribe(
+        () => {
+          this.router.navigate(['/']);
         }
-      }
-    )
+      );
+  }
+
+  onClick(): void {
+
   }
 
   // Configurações do formulário
