@@ -11,7 +11,13 @@ import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.co
 import { OrientationsComponent } from './pages/orientations/orientations.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent},
+  { path: 'aluno', component: LoginComponent },
+  { path: 'professor', component: LoginComponent },
+  { path: 'pais-de-aluno', component: LoginComponent },
+  { path: 'egresso', component: LoginComponent },
+  { path: 'coordenador', component: LoginComponent },
+  { path: 'coordenador-de-estagio', component: LoginComponent },
+  { path: 'gestor', component: LoginComponent },
   { path: 'home', component: HomeComponent},
   { path: 'vagas-de-emprego', component: JobsVacancyComponent},
   { path: 'calendario-academico', component: AcademicCalendarComponent},

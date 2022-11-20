@@ -11,9 +11,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ButtonComponent } from './components/button/button.component';
-import { FormComponent } from './components/form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavigateComponent } from './components/navigate/navigate.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AcademicCalendarComponent } from './pages/academic-calendar/academic-calendar.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,6 +22,7 @@ import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ReportCardComponent } from './pages/report-card/report-card.component';
 import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.component';
 import { OrientationsComponent } from './pages/orientations/orientations.component';
+import { TitleLoginComponent } from './components/title-login/title-login.component';
 
 
 @NgModule({
@@ -32,8 +31,6 @@ import { OrientationsComponent } from './pages/orientations/orientations.compone
     LoginComponent,
     AboutComponent,
     ButtonComponent,
-    FormComponent,
-    NavigateComponent,
     HeaderComponent,
     AcademicCalendarComponent,
     HomeComponent,
@@ -42,6 +39,7 @@ import { OrientationsComponent } from './pages/orientations/orientations.compone
     ReportCardComponent,
     AcademicDiaryComponent,
     OrientationsComponent,
+    TitleLoginComponent,
   ],
   imports: [
     BrowserModule,
