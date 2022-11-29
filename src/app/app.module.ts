@@ -23,6 +23,8 @@ import { ReportCardComponent } from './pages/report-card/report-card.component';
 import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.component';
 import { OrientationsComponent } from './pages/orientations/orientations.component';
 import { TitleLoginComponent } from './components/title-login/title-login.component';
+import { ModalProfileComponent } from './components/modal-profile/modal-profile.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import { TitleLoginComponent } from './components/title-login/title-login.compon
     AcademicDiaryComponent,
     OrientationsComponent,
     TitleLoginComponent,
+    ModalProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { TitleLoginComponent } from './components/title-login/title-login.compon
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule
   ],
   exports: [
     MatTabsModule,

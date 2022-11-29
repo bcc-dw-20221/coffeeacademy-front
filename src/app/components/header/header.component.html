@@ -3,11 +3,13 @@
         <img src="../../../assets/logo-ifce.svg" alt="">
         <div class="profile-info">
             <span>Fulano de tal</span>
-            <i class="ph-user-circle-fill"></i>
+            <app-modal-profile></app-modal-profile>
         </div>
     </header>
     <div *ngIf="show" class="title">
-        <i class="ph-arrow-circle-left-fill"></i>
+        <a class="route" routerLink="/home">
+            <i class="ph-arrow-circle-left-fill"></i>
+        </a>
         <h1>{{title}}</h1>
     </div>
     
