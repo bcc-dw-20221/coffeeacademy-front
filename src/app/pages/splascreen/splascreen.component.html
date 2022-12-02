@@ -1,3 +1,20 @@
 <app-header [showTitle]="headerProps.showTitle" [showInfoProfile]="headerProps.showInfoProfile"></app-header>
 
+<div class="container">
+    <div class="container-info">
 
+        <div class="container-buttons">
+            <h1 class="title">
+                <strong style="color: #199558; margin-bottom: 10px;">Acadêmico IFCE</strong>
+                <strong style="color: #73BA97;">Sejam bem-vindos!</strong>
+            </h1>
+            <div class="buttons">
+                <app-button routerLink="/about" id="button-primary" [buttonConfigs]="primaryMinRounded"></app-button>
+                <app-button routerLinkActive="active" routerLink="/aluno" [buttonConfigs]="secondaryMinRounded"></app-button>
+            </div>
+            <img src="../../../assets/img-splashscreen.svg" alt="">
+        </div>
+        <img class="bg" src="../../../assets/bg-splashscreen.svg" alt="">
+    </div>
+    <div></div>
+</div>
