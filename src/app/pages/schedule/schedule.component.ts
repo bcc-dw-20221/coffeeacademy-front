@@ -12,6 +12,7 @@ export class ScheduleComponent implements OnInit {
   public headerProps = {
     title: "Horário Individual",
     showTitle: true,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {

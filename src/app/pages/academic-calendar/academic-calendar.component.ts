@@ -12,6 +12,7 @@ export class AcademicCalendarComponent implements OnInit {
   public headerProps = {
     title: "Calendário Acadêmico",
     showTitle: true,
+    showInfoProfile: true,
   }
 
 

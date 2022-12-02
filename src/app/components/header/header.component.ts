@@ -9,7 +9,8 @@ import {MatMenuModule} from '@angular/material/menu';
 export class HeaderComponent implements OnInit {
 
   @Input() public title: any;
-  @Input() public show: any;
+  @Input() public showTitle: any;
+  @Input() public showInfoProfile: any;
 
   constructor() { }
 
