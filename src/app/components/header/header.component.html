@@ -1,12 +1,12 @@
 <div class="container">
     <header>
         <img src="../../../assets/logo-ifce.svg" alt="">
-        <div class="profile-info">
+        <div *ngIf="showInfoProfile" class="profile-info">
             <span>Fulano de tal</span>
             <app-modal-profile></app-modal-profile>
         </div>
     </header>
-    <div *ngIf="show" class="title">
+    <div *ngIf="showTitle" class="title">
         <a class="route" routerLink="/home">
             <i class="ph-arrow-circle-left-fill"></i>
         </a>

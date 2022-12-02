@@ -12,6 +12,7 @@ export class JobsVacancyComponent implements OnInit {
   public headerProps = {
     title: "Vagas de Emprego/Estágio",
     showTitle: true,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {

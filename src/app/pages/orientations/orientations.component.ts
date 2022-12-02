@@ -12,6 +12,7 @@ export class OrientationsComponent implements OnInit {
   public headerProps = {
     title: "Minhas Orientações",
     showTitle: true,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {

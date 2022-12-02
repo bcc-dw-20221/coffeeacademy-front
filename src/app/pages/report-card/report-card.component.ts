@@ -12,6 +12,7 @@ export class ReportCardComponent implements OnInit {
   public headerProps = {
     title: "Boletim",
     showTitle: true,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {

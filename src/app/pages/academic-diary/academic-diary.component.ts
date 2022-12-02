@@ -12,6 +12,7 @@ export class AcademicDiaryComponent implements OnInit {
   public headerProps = {
     title: "Meus Diários",
     showTitle: true,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {

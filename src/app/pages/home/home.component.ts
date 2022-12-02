@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   public headerProps = {
     showTitle: false,
+    showInfoProfile: true,
   }
 
   ngOnInit(): void {
