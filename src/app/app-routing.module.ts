@@ -9,8 +9,11 @@ import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ReportCardComponent } from './pages/report-card/report-card.component';
 import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.component';
 import { OrientationsComponent } from './pages/orientations/orientations.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 
 const routes: Routes = [
+  { path: '', component: SplascreenComponent},
   { path: 'aluno', component: LoginComponent },
   { path: 'professor', component: LoginComponent },
   { path: 'pais-de-aluno', component: LoginComponent },
@@ -25,7 +28,8 @@ const routes: Routes = [
   { path: 'boletim', component: ReportCardComponent},
   { path: 'meus-diarios', component: AcademicDiaryComponent},
   { path: 'minhas-orientacoes', component: OrientationsComponent},
-  { path: 'about', component: AboutComponent}
+  { path: 'about', component: AboutComponent},
+  { path: 'modal', component: ModalComponent}
 ];
 
 @NgModule({

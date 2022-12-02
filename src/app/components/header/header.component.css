@@ -2,6 +2,7 @@
     padding: 0 20px;
     color: rgba(25, 149, 88, 1);
 }
+
 header {
     display: flex;
     justify-content: space-between;

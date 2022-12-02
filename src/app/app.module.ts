@@ -25,6 +25,8 @@ import { OrientationsComponent } from './pages/orientations/orientations.compone
 import { TitleLoginComponent } from './components/title-login/title-login.component';
 import { ModalProfileComponent } from './components/modal-profile/modal-profile.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { ModalComponent } from './components/modal/modal.component';
+import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import {MatMenuModule} from '@angular/material/menu';
     OrientationsComponent,
     TitleLoginComponent,
     ModalProfileComponent,
+    ModalComponent,
+    SplascreenComponent,
   ],
   imports: [
     BrowserModule,
