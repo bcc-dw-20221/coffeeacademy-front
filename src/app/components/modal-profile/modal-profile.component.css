@@ -10,8 +10,12 @@
     font-size: 1.5rem;
 }
 
+.menu-profile {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
 .items {
-    font-size: 1.25rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     color: rgba(25, 149, 88, 1);
