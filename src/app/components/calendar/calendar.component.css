@@ -1,0 +1,27 @@
+.calendar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.demo-inline-calendar-card {
+    width: 400px;
+    margin-right: 100px;
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+::ng-deep .mat-calendar-body-selected{
+    background-color: rgba(25, 149, 88, 1);
+    border-color: rgba(25, 149, 88, 1);
+}
+
+::ng-deep .mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: #DDEFE6;
+    border-color: #DDEFE6;
+}

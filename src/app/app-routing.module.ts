@@ -11,6 +11,7 @@ import { AcademicDiaryComponent } from './pages/academic-diary/academic-diary.co
 import { OrientationsComponent } from './pages/orientations/orientations.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { SplascreenComponent } from './pages/splascreen/splascreen.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -28,8 +29,7 @@ const routes: Routes = [
   { path: 'boletim', component: ReportCardComponent},
   { path: 'meus-diarios', component: AcademicDiaryComponent},
   { path: 'minhas-orientacoes', component: OrientationsComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'modal', component: ModalComponent}
+  { path: 'sobre', component: AboutComponent},
 ];
 
 @NgModule({
