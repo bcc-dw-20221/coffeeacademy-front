@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -27,6 +29,8 @@ import { ModalProfileComponent } from './components/modal-profile/modal-profile.
 import {MatMenuModule} from '@angular/material/menu';
 import { ModalComponent } from './components/modal/modal.component';
 import { SplascreenComponent } from './pages/splascreen/splascreen.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -47,6 +51,7 @@ import { SplascreenComponent } from './pages/splascreen/splascreen.component';
     ModalProfileComponent,
     ModalComponent,
     SplascreenComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,14 +64,19 @@ import { SplascreenComponent } from './pages/splascreen/splascreen.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule,
+    MatCardModule,
+    MatNativeDateModule 
   ],
   exports: [
     MatTabsModule,
     MatSidenavModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
