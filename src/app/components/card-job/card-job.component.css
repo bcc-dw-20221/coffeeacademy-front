@@ -1,0 +1,33 @@
+.vaga {
+    background-color: #DDEFE6;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.sobre-vaga {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-vaga h2 {
+    margin-bottom: 0;
+}
+
+.sobre-vaga img {
+    margin: 16px 0 16px 16px;
+    
+}
+
+.info-vaga {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    display: flex;    
+    justify-content: flex-end;
+    margin-top: 50px;
+}

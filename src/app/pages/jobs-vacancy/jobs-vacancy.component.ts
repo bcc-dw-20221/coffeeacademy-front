@@ -17,15 +17,4 @@ export class JobsVacancyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  primaryMin = {
-    title: 'Ver Mais',
-    styles: {
-      backgroundColor: '#199558',
-      color: '#FFFFFF',
-      height: '64px',
-      width: '210px',
-      borderRadius: '4px'
-    }
-  };
 }
