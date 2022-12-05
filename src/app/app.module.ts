@@ -31,6 +31,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { CardJobComponent } from './components/card-job/card-job.component';
+import { CardOrientationComponent } from './components/card-orientation/card-orientation.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     ModalComponent,
     SplascreenComponent,
     CalendarComponent,
+    CardJobComponent,
+    CardOrientationComponent,
   ],
   imports: [
     BrowserModule,
