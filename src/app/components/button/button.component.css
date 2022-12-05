@@ -9,3 +9,7 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.button:hover {
+    opacity: .8;
+}
