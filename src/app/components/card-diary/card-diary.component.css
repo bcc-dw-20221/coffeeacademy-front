@@ -1,0 +1,32 @@
+.disciplina {
+    background-color: #DDEFE6;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 500px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.info-disciplina {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 22px;
+}

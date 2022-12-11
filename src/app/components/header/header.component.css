@@ -36,10 +36,13 @@ header {
     display: flex;
     align-items: center;
     color: rgba(25, 149, 88, 1);
+    font-size: 2rem;
 }
 
 .title h1 {
     margin: 0;
     margin-left: 1rem;
+
     font-weight: 700;
+    font-size: 2rem;
 }
