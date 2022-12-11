@@ -1,0 +1,31 @@
+.container {
+    background-color: #FFFFFF;
+
+    padding: 24px;
+    margin-top: 24px;
+}
+
+#nome {
+    font-size: 2rem;
+    color: #199558;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.info-pessoal, .endereco {
+    margin-bottom: 32px;
+}
+
+.pais, .pessoais, .naturalidade, .dados, .end-1, .end-2, .telefone, .emails, .buttons{
+    display: flex;
+}
+
+.buttons {
+    margin-top: 24px;
+    justify-content: flex-end;
+}

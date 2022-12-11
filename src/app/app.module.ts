@@ -35,6 +35,7 @@ import { CardJobComponent } from './components/card-job/card-job.component';
 import { CardOrientationComponent } from './components/card-orientation/card-orientation.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { InputComponent } from './components/input/input.component';
+import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { InputComponent } from './components/input/input.component';
     CardOrientationComponent,
     CadastroComponent,
     InputComponent,
+    EditarPerfilComponent,
   ],
   imports: [
     BrowserModule,
