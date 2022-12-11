@@ -35,7 +35,7 @@ input {
 input::placeholder {
     font-weight: 600;
     font-size: 1rem;
-    color: #BFBFBF;
+    color: #414040;
 }
 
 input:focus {
