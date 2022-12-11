@@ -33,6 +33,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CardJobComponent } from './components/card-job/card-job.component';
 import { CardOrientationComponent } from './components/card-orientation/card-orientation.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { InputComponent } from './components/input/input.component';
 
 
 @NgModule({
@@ -56,6 +58,8 @@ import { CardOrientationComponent } from './components/card-orientation/card-ori
     CalendarComponent,
     CardJobComponent,
     CardOrientationComponent,
+    CadastroComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
