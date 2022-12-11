@@ -36,6 +36,7 @@ import { CardOrientationComponent } from './components/card-orientation/card-ori
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { InputComponent } from './components/input/input.component';
 import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.component';
+import { CardDiaryComponent } from './components/card-diary/card-diary.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.compo
     CadastroComponent,
     InputComponent,
     EditarPerfilComponent,
+    CardDiaryComponent,
   ],
   imports: [
     BrowserModule,
