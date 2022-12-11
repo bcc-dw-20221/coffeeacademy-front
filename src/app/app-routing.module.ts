@@ -13,6 +13,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'minhas-orientacoes', component: OrientationsComponent},
   { path: 'sobre', component: AboutComponent},
   { path: 'cadastro', component: CadastroComponent},
+  { path: 'editar-perfil', component: EditarPerfilComponent},
 ];
 
 @NgModule({
