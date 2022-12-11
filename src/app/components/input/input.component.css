@@ -3,6 +3,7 @@
     flex-direction: row;
     margin-bottom: 20px;
 }
+
 label {
     display: flex;
     justify-content: center;
