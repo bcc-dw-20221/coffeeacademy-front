@@ -12,6 +12,7 @@ import { OrientationsComponent } from './pages/orientations/orientations.compone
 import { ModalComponent } from './components/modal/modal.component';
 import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'meus-diarios', component: AcademicDiaryComponent},
   { path: 'minhas-orientacoes', component: OrientationsComponent},
   { path: 'sobre', component: AboutComponent},
+  { path: 'cadastro', component: CadastroComponent},
 ];
 
 @NgModule({
