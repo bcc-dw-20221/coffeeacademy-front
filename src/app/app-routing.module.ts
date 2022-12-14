@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AcademicCalendarComponent } from './pages/academic-calendar/academic-calendar.component';
-import { HomeComponent } from './pages/home/home.component';
+
 import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ReportCardComponent } from './pages/report-card/report-card.component';
@@ -14,6 +14,9 @@ import { SplascreenComponent } from './pages/splascreen/splascreen.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.component';
+import { HomeComponent } from './pages/home-aluno/home.component';
+import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
+import { TurmasComponent } from './pages/turmas/turmas.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -25,6 +28,7 @@ const routes: Routes = [
   { path: 'coordenador-de-estagio', component: LoginComponent },
   { path: 'gestor', component: LoginComponent },
   { path: 'home', component: HomeComponent},
+  { path: 'home-professor', component: HomeProfessorComponent},
   { path: 'vagas-de-emprego', component: JobsVacancyComponent},
   { path: 'calendario-academico', component: AcademicCalendarComponent},
   { path: 'horario', component: ScheduleComponent},
@@ -34,6 +38,7 @@ const routes: Routes = [
   { path: 'sobre', component: AboutComponent},
   { path: 'cadastro', component: CadastroComponent},
   { path: 'editar-perfil', component: EditarPerfilComponent},
+  { path: 'turmas', component: TurmasComponent},
 ];
 
 @NgModule({

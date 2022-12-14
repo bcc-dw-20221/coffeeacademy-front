@@ -16,7 +16,6 @@ import { ButtonComponent } from './components/button/button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { AcademicCalendarComponent } from './pages/academic-calendar/academic-calendar.component';
-import { HomeComponent } from './pages/home/home.component';
 import { JobsVacancyComponent } from './pages/jobs-vacancy/jobs-vacancy.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -37,6 +36,9 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { InputComponent } from './components/input/input.component';
 import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.component';
 import { CardDiaryComponent } from './components/card-diary/card-diary.component';
+import { HomeComponent } from './pages/home-aluno/home.component';
+import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
+import { TurmasComponent } from './pages/turmas/turmas.component';
 
 
 @NgModule({
@@ -64,6 +66,8 @@ import { CardDiaryComponent } from './components/card-diary/card-diary.component
     InputComponent,
     EditarPerfilComponent,
     CardDiaryComponent,
+    HomeProfessorComponent,
+    TurmasComponent,
   ],
   imports: [
     BrowserModule,
