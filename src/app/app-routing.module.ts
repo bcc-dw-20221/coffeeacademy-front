@@ -17,6 +17,7 @@ import { EditarPerfilComponent } from './pages/editar-perfil/editar-perfil.compo
 import { HomeComponent } from './pages/home-aluno/home.component';
 import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
 import { TurmasComponent } from './pages/turmas/turmas.component';
+import { HomeGestorComponent } from './pages/home-gestor/home-gestor.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'gestor', component: LoginComponent },
   { path: 'home', component: HomeComponent},
   { path: 'home-professor', component: HomeProfessorComponent},
+  { path: 'home-gestor', component: HomeGestorComponent},
   { path: 'vagas-de-emprego', component: JobsVacancyComponent},
   { path: 'calendario-academico', component: AcademicCalendarComponent},
   { path: 'horario', component: ScheduleComponent},
@@ -36,7 +38,7 @@ const routes: Routes = [
   { path: 'meus-diarios', component: AcademicDiaryComponent},
   { path: 'minhas-orientacoes', component: OrientationsComponent},
   { path: 'sobre', component: AboutComponent},
-  { path: 'cadastro', component: CadastroComponent},
+  { path: 'cadastro-aluno', component: CadastroComponent},
   { path: 'editar-perfil', component: EditarPerfilComponent},
   { path: 'turmas', component: TurmasComponent},
 ];

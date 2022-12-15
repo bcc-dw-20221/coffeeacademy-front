@@ -39,6 +39,7 @@ import { CardDiaryComponent } from './components/card-diary/card-diary.component
 import { HomeComponent } from './pages/home-aluno/home.component';
 import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
 import { TurmasComponent } from './pages/turmas/turmas.component';
+import { HomeGestorComponent } from './pages/home-gestor/home-gestor.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { TurmasComponent } from './pages/turmas/turmas.component';
     CardDiaryComponent,
     HomeProfessorComponent,
     TurmasComponent,
+    HomeGestorComponent,
   ],
   imports: [
     BrowserModule,
