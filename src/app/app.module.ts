@@ -40,6 +40,7 @@ import { HomeComponent } from './pages/home-aluno/home.component';
 import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
 import { TurmasComponent } from './pages/turmas/turmas.component';
 import { HomeGestorComponent } from './pages/home-gestor/home-gestor.component';
+import { CadastroProfessorComponent } from './pages/cadastro-professor/cadastro-professor.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { HomeGestorComponent } from './pages/home-gestor/home-gestor.component';
     HomeProfessorComponent,
     TurmasComponent,
     HomeGestorComponent,
+    CadastroProfessorComponent,
   ],
   imports: [
     BrowserModule,
