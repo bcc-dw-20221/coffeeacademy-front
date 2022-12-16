@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home-aluno/home.component';
 import { HomeProfessorComponent } from './pages/home-professor/home-professor.component';
 import { TurmasComponent } from './pages/turmas/turmas.component';
 import { HomeGestorComponent } from './pages/home-gestor/home-gestor.component';
+import { CadastroProfessorComponent } from './pages/cadastro-professor/cadastro-professor.component';
 
 const routes: Routes = [
   { path: '', component: SplascreenComponent},
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'minhas-orientacoes', component: OrientationsComponent},
   { path: 'sobre', component: AboutComponent},
   { path: 'cadastro-aluno', component: CadastroComponent},
+  { path: 'cadastro-professor', component: CadastroProfessorComponent},
   { path: 'editar-perfil', component: EditarPerfilComponent},
   { path: 'turmas', component: TurmasComponent},
 ];

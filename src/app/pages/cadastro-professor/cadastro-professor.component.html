@@ -1,0 +1,117 @@
+<app-header [showInfoProfile]="headerProps.showInfoProfile" [title]="headerProps.title"
+    [showTitle]="headerProps.showTitle"></app-header>
+
+<div class="container">
+    <div class="info-pessoal">
+
+        <h2>Informações Pessoais:</h2>
+
+        <app-input label="Nome Completo" placeholder="Nome completo do aluno" type="text"
+            [inputProps]="primaryInput"></app-input>
+
+        <div class="pais">
+            <app-input label="Nome da Mãe" placeholder="Nome completo da mãe" type="text"
+                [inputProps]="primaryInput"></app-input>
+            <app-input label="Nome do Pai" placeholder="Nome completo do pai" type="text"
+                [inputProps]="primaryInput"></app-input>
+        </div>
+
+        <div class="pessoais">
+            <app-input label="Profissão" placeholder="Profissão" type="text" [inputProps]="secondaryInput"></app-input>
+            <app-input label="Estado Civil" placeholder="Estado Civil" type="text"
+                [inputProps]="secondaryInput"></app-input>
+            <app-input label="Número de filhos" placeholder="Escolher" type="number"
+                [inputProps]="tertiaryInput"></app-input>
+            <div class="select">
+                <label>
+                    Tipo Sanguíneo
+                    <select name="" id="">
+                        <option label="Selecionar" value="Selecionar"></option>
+                        <option label="Não Sei" value="Não Sei"></option>
+                        <option label="A+" value="A+"></option>
+                        <option label="B+" value="B+"></option>
+                        <option label="AB+" value="AB+"></option>
+                        <option label="O+" value="O+"></option>
+                        <option label="A-" value="A-"></option>
+                        <option label="B-" value="B-"></option>
+                        <option label="AB-" value="AB-"></option>
+                        <option label="O-" value="O-"></option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class="naturalidade">
+            <div class="select">
+                <label>
+                    Sexo
+                    <select name="" id="">
+                        <option label="Selecionar" value="Selecionar"></option>
+                        <option label="F" value="F"></option>
+                        <option label="M" value="M"></option>
+                    </select>
+                </label>
+            </div>
+            <app-input label="Naturalidade" placeholder="Naturalidade" type="text"
+                [inputProps]="secondaryInput"></app-input>
+            <app-input label="Nacionalidade" placeholder="Nacionalidade" type="text"
+                [inputProps]="secondaryInput"></app-input>
+        </div>
+
+        <div class="dados">
+            <app-input label="Data de Nascimento" placeholder="" type="date" [inputProps]="secondaryInput"></app-input>
+            <app-input label="CPF" placeholder="XXX.XXX.XXX-XX" type="text" [inputProps]="secondaryInput"></app-input>
+            <app-input label="Grau de Escolaridade" placeholder="Grau de Escolaridade" type="text"
+                [inputProps]="primaryInput"></app-input>
+        </div>
+
+    </div>
+
+    <div class="curriculo">
+        <h2>Currículo:</h2>
+
+        <div class="info-curriculo">
+            <app-input label="Formação" placeholder="Formação" type="text" [inputProps]="primaryInput"></app-input>
+
+            <app-input label="Grau de Instrução" placeholder="Grau de Instrução" type="text" [inputProps]="primaryInput"></app-input>
+        </div>
+    </div>
+
+    <div class="endereco">
+        <h2>Endereço</h2>
+        <div class="end-1">
+            <app-input label="Rua" placeholder="Nome da rua" type="text" [inputProps]="primaryInput"></app-input>
+            <app-input label="Bairro" placeholder="Bairro" type="text" [inputProps]="secondaryInput"></app-input>
+            <app-input label="Número" placeholder="Número" type="text" [inputProps]="secondaryInput"></app-input>
+        </div>
+
+        <div class="end-2">
+            <app-input label="Cidade" placeholder="Cidade" type="text" [inputProps]="secondaryInput"></app-input>
+            <app-input label="CEP" placeholder="CEP" type="text" [inputProps]="secondaryInput"></app-input>
+            <app-input label="Complemento" placeholder="Complemento" type="text"
+                [inputProps]="primaryInput"></app-input>
+        </div>
+    </div>
+
+    <div class="contato">
+        <h2>Contato:</h2>
+        <div class="telefone">
+            <app-input label="Telefone" placeholder="(XX) XXXXX-XXXX" type="tel"
+                [inputProps]="secondaryInput"></app-input>
+            <app-input label="Telefone Fixo" placeholder="(XX) XXXX-XXXX" type="tel"
+                [inputProps]="secondaryInput"></app-input>
+        </div>
+
+        <div class="emails">
+            <app-input label="E-mail" placeholder="email@email.com" type="email"
+                [inputProps]="primaryInput"></app-input>
+            <app-input label="E-mail institucional" placeholder="email@aluno.ifce.edu.br" type="email"
+                [inputProps]="primaryInput"></app-input>
+        </div>
+
+        <div class="buttons">
+            <app-button title="CANCELAR" [buttonConfigs]="secondaryMinButton"></app-button>
+            <app-button type="submit" title="CADASTRAR" [buttonConfigs]="primaryMinButton"></app-button>
+        </div>
+    </div>
+</div>
